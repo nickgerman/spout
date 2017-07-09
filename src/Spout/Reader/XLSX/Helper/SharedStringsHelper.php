@@ -99,7 +99,7 @@ class SharedStringsHelper
 
             $xmlReader->readUntilNodeFound(self::XML_NODE_SI);
 
-            while ($xmlReader->name === self::XML_NODE_SI) {
+            while ($xmlReader->localName === self::XML_NODE_SI) {
                 $this->processSharedStringsItem($xmlReader, $sharedStringIndex);
                 $sharedStringIndex++;
 
